@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Eazy Rental - Bike & Car</title>
+
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="/../public/favicon.svg" type="image/svg+xml">
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="../css/booking.css">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600&family=Open+Sans&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header" data-header>
+    <div class="container">
+
+      <div class="overlay" data-overlay></div>
+
+      <a href="#" class="logo">
+        <img src="../images/logo.png" alt="Eazy-Rental logo" height="50px" width="200px">
+      </a>
+
+      <nav class="navbar" data-navbar>
+        <ul class="navbar-list">
+
+          <li>
+            <a href="#home" class="navbar-link" data-nav-link>Home</a>
+          </li>
+
+          <li>
+            <a href="#featured-car" class="navbar-link" data-nav-link>Explore cars</a>
+          </li>
+
+          <li>
+            <a href="#" class="navbar-link" data-nav-link>About us</a>
+          </li>
+
+          <li>
+            <a href="#blog" class="navbar-link" data-nav-link>Blog</a>
+          </li>
+
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+
+        <div class="header-contact">
+          <a href="tel:+918107020259" class="contact-link">+91-8107020259</a>
+
+          <span class="contact-time"><b>24/7</b></span>
+        </div>
+
+        <a href="#featured-car" class="btn" aria-labelledby="aria-label-txt">
+          <ion-icon name="car-outline"></ion-icon>
+
+          <span id="aria-label-txt">Explore cars</span>
+        </a>
+
+        <a href="login.html" class="btn user-btn" aria-label="Profile">
+          <ion-icon name="person-sharp"></ion-icon>
+        </a>
+
+        <button class="nav-toggle-btn" data-nav-toggle-btn aria-label="Toggle Menu">
+          <span class="one"></span>
+          <span class="two"></span>
+          <span class="three"></span>
+        </button>
+
+      </div>
+
+    </div>
+  </header>
+
+
+
+
+
+  <main>
+    <article>
+
+<!-- 
+        - #Booking page
+      -->
+
+      <section class="main-section">
+        <div class="booking-page">
+          <h2 class="section-title">Vehicle Name</h2>
+          <div class="col-1">
+            <div class="car-photo">
+                <img class="img" src="/src/images/elogo.png">
+            </div>
+            <div class="i-package">
+                <h3>Include</h3>
+                    <span>Vehicle insurance(User+3rd Party)<br>
+                      1 Helmet is free<br>
+                      Toeing and Impounding(Caused by Vehicle failure)<br>
+                      Maintennace and Cleaning<br>
+                      24/7 Support Service<br>
+                    </span>
+            </div>
+            <div class="e-package">
+                <H3>Excluded</H3>
+                <span>Fuel<br>
+                    Parking<br>
+                    State and Toll Taxes<br>
+                    Traffic Voilations and Penalties<br>
+                    Toeing and Impounding(Caused by Member Failure)
+                </span>
+            </div>
+          </div>
+
+          <div class="col-2">
+            <div class="rent-info">
+                <span class="offer-title">Rent Info</span>
+                <ul class="offer-list">
+                    <li>
+                        <span class="offer-list-name">Pickup Date</span>
+                        <span class="offer-list-value">dd/mm/yyyy hh:mm</span>
+                    </li>
+                    <li>
+                        <span class="offer-list-name">Drop Date</span>
+                        <span class="offer-list-value">dd/mm/yyyy hh:mm</span>
+                    </li>
+                    <li>
+                        <span class="offer-list-name">Total Hours</span>
+                        <span class="offer-list-value">Value</span>
+                    </li>
+                    <li>
+                        <span class="offer-list-name">Free KM</span>
+                        <span class="offer-list-value">Value</span>
+                    </li>
+                    <li>
+                        <span class="offer-list-name">Package</span>
+                        <span class="offer-list-value">Value</span>
+                    </li>
+                    <li>
+                        <span class="offer-list-name">Pickup Type</span>
+                        <span class="offer-list-value">SELF</span>
+                    </li>
+                </ul>
+                <span class="offer-title">Car Details</span>
+                <ul class="offer-details">
+                    <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12.3,12.22A4.92,4.92,0,0,0,14,8.5a5,5,0,0,0-10,0,4.92,4.92,0,0,0,1.7,3.72A8,8,0,0,0,1,19.5a1,1,0,0,0,2,0,6,6,0,0,1,12,0,1,1,0,0,0,2,0A8,8,0,0,0,12.3,12.22ZM9,11.5a3,3,0,1,1,3-3A3,3,0,0,1,9,11.5Zm9.74.32A5,5,0,0,0,15,3.5a1,1,0,0,0,0,2,3,3,0,0,1,3,3,3,3,0,0,1-1.5,2.59,1,1,0,0,0-.5.84,1,1,0,0,0,.45.86l.39.26.13.07a7,7,0,0,1,4,6.38,1,1,0,0,0,2,0A9,9,0,0,0,18.74,11.82Z"></path></svg>   
+                    <span>5 Seats</span>
+                    </li>
+
+                    <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.54,6.29,19,4.75,17.59,3.34a1,1,0,0,0-1.42,1.42l1,1-.83,2.49a3,3,0,0,0,.73,3.07l2.95,3V19a1,1,0,0,1-2,0V17a3,3,0,0,0-3-3H14V5a3,3,0,0,0-3-3H5A3,3,0,0,0,2,5V19a3,3,0,0,0,3,3h6a3,3,0,0,0,3-3V16h1a1,1,0,0,1,1,1v2a3,3,0,0,0,6,0V9.83A5,5,0,0,0,20.54,6.29ZM12,19a1,1,0,0,1-1,1H5a1,1,0,0,1-1-1V12h8Zm0-9H4V5A1,1,0,0,1,5,4h6a1,1,0,0,1,1,1Zm8,1.42L18.46,9.88a1,1,0,0,1-.24-1l.51-1.54.39.4A3,3,0,0,1,20,9.83Z"></path></svg>
+                    <span>Petrol</span>
+                    </li>
+
+                    <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19.088,4.95453c-.00732-.00781-.00952-.01819-.01715-.02582s-.01819-.00995-.02606-.01733a9.97886,9.97886,0,0,0-14.08948,0c-.00787.00738-.01837.00964-.02606.01733s-.00983.018-.01715.02582a10,10,0,1,0,14.1759,0ZM12,20a7.9847,7.9847,0,0,1-6.235-3H9.78027a2.9636,2.9636,0,0,0,4.43946,0h4.01532A7.9847,7.9847,0,0,1,12,20Zm-1-5a1,1,0,1,1,1,1A1.001,1.001,0,0,1,11,15Zm8.41022.00208L19.3999,15H15a2.99507,2.99507,0,0,0-2-2.81573V9a1,1,0,0,0-2,0v3.18427A2.99507,2.99507,0,0,0,9,15H4.6001l-.01032.00208A7.93083,7.93083,0,0,1,4.06946,13H5a1,1,0,0,0,0-2H4.06946A7.95128,7.95128,0,0,1,5.68854,7.10211l.65472.65473A.99989.99989,0,1,0,7.75732,6.34277l-.65466-.65466A7.95231,7.95231,0,0,1,11,4.06946V5a1,1,0,0,0,2,0V4.06946a7.95231,7.95231,0,0,1,3.89734,1.61865l-.65466.65466a.99989.99989,0,1,0,1.41406,1.41407l.65472-.65473A7.95128,7.95128,0,0,1,19.93054,11H19a1,1,0,0,0,0,2h.93054A7.93083,7.93083,0,0,1,19.41022,15.00208Z"></path></svg>
+                    <span>25 Ltr</span>
+                    </li>
+
+                    <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12,12a1,1,0,1,0,1,1A1,1,0,0,0,12,12Zm9.71-2.36a0,0,0,0,1,0,0,10,10,0,0,0-19.4,0,0,0,0,0,1,0,0,9.75,9.75,0,0,0,0,4.72,0,0,0,0,1,0,0A10,10,0,0,0,9.61,21.7h0a9.67,9.67,0,0,0,4.7,0h0a10,10,0,0,0,7.31-7.31,0,0,0,0,1,0,0,9.75,9.75,0,0,0,0-4.72ZM12,4a8,8,0,0,1,7.41,5H4.59A8,8,0,0,1,12,4ZM4,12a8.26,8.26,0,0,1,.07-1H6v2H4.07A8.26,8.26,0,0,1,4,12Zm5,7.41A8,8,0,0,1,4.59,15H7a2,2,0,0,1,2,2Zm4,.52A8.26,8.26,0,0,1,12,20a8.26,8.26,0,0,1-1-.07V18h2ZM13.14,16H10.86A4,4,0,0,0,8,13.14V11h8v2.14A4,4,0,0,0,13.14,16ZM15,19.41V17a2,2,0,0,1,2-2h2.41A8,8,0,0,1,15,19.41ZM19.93,13H18V11h1.93A8.26,8.26,0,0,1,20,12,8.26,8.26,0,0,1,19.93,13Z"></path></svg>
+                    <span>Manual</span>
+                    </li>
+                </ul>
+                <span class="offer-title">Offer</span>
+                <div class="offer-wrap">
+                    <form action="" method="" class="" id="">
+                        <ul class="">
+                            <input type="hidden" name="" value="">
+                            <input type="hidden" name="" value="">
+                            <input type="hidden" name="" value="">
+                            <input type="hidden" name="" value="">
+                            <i class="glyphicon glyphicon-triangle-right"></i>
+                            Select fleet: <br>
+                            <select name="fleet_id" style="background-color: #F8E6CB;color:black;padding: 10px; width: 300px;">
+                                You can book17218<option value="18">RAILWAY STATION(JAIPUR RAILWAY MERTRO STATION PARKING)</option>
+                                <option value="18">RAILWAY STATION(JAIPUR RAILWAY MERTRO STATION PARKING)</option>
+                                 </select>
+                            <li>
+                                <i>Base Charge</i>
+                                <span class="this-value">₹2830 </span>
+                            </li>
+                            <Li id="coupen">
+                                Coupen Code <br>
+                                <input type="text" name="coupon" id="code" style="background-color:#F8E6CB; color: black; padding: 5px;     line-height: normal;
+                                font-size: 20px;text-transform: uppercase; width: 200px; display: inline-block;">
+                               <button type="button" id="apBtn" style="background-color:green;border: 0px; color: white; padding: 5px;     line-height: normal;
+                               font-size: 20px;text-transform: uppercase; width: 100px; display: inline-block;" class="btn btn-primary">APPLY</button>
+                                <br>
+                            </Li>
+                            <li><i class="glyphicon glyphicon-arrow-right"></i>Security Deposit <span class="this-value">₹2000 </span><br>(Refundable. Within 10 Days)</li>
+                            <span class="offer-price">₹<pa>4830</pa> <sub></sub></span>
+                            <button type="submit" class="offer__rent open-mod0al"><span>Rent now</span></button>
+                        </ul>
+                    </form>
+                </div>
+            </div>
+
+            
+
+            <div class="offer">
+            </div>
+
+            <div class="pay-now">
+            </div>
+
+          </div>
+      </section>
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="../js/script.js"></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
