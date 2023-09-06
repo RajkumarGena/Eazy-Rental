@@ -57,7 +57,7 @@
           </li>
 
           <li>
-            <a href="#blog" class="navbar-link" data-nav-link>Blog</a>
+            <a href="tel:+918107020259" class="navbar-link" data-nav-link>Contact us</a>
           </li>
 
         </ul>
@@ -70,10 +70,15 @@
           <span class="contact-time"><b>24/7</b></span>
         </div>
 
-        <a href="login.html" class="btn user-btn" aria-label="Profile">
+        <!-- <a href="login.html" class="btn user-btn" aria-label="Profile">
           <ion-icon name="person-sharp"></ion-icon>
-          <span id="Profile"><b>Login</b></span>
-        </a>
+          <span id="Profile"> <button id="Profile"> <b>Login</b> </button></span>
+        </a> -->
+        <a href="login.html"><ion-icon name="person-sharp"></ion-icon></a>
+
+        <style> #Profile button { background: blue; width: 100px; height: 40px; border-radius: 20px;} 
+        .header ion-icon { width: 35px; height: 35px; background: rgb(174, 222, 250); border-style:inset; border-radius: 14px;}
+        </style>
 
         <button class="nav-toggle-btn" data-nav-toggle-btn aria-label="Toggle Menu">
           <span class="one"></span>
@@ -98,6 +103,7 @@
         <div class="container">
 
           <div class="hero-content">
+            <div class="hero-bg"></div>
             <h2 class="h1 hero-title">The Fastest Growing Car and Bike Rental</h2>
 
             <p class="hero-text">
@@ -113,11 +119,56 @@
               <label for="input-1" class="input-label">Select Vehicle Category</label>
                 <div class="dropdown-content">
                   <select>
-                    <option>Bike</option>
-                    <option>Car</option>
+                    <option value="bike">Bike</option>
+                    <option value="car">Car</option>
                   </select>
                 </div>
+          <style>
+            @media only screen and (max-width: 426px) {
+            .hero-bg {
+              display: block;
+               background: url("../images/blog-1.jpg") no-repeat;
+              background-size: cover;
+               background-position: left;
+                position: absolute;
+               top: 60px;
+               bottom: 100px;
+              left: 0;
+              width: 100%;
+                border-radius: 30px;
+                z-index: -1;
+                margin: 3px;
+            }
+            .hero-title { color: azure;  }      
+            .hero-text { color: rgb(190, 199, 199); } 
+            }
 
+            .input-wrapper .dropdown-content {
+              position: relative;
+            display: block;
+            /* width: 15em; */
+            height: 2em;
+            line-height: 3;
+            overflow: hidden;
+            border: none;
+            padding-bottom: 5px;
+            }
+            .input-wrapper .dropdown-content select {
+            outline: 0;
+            background: hsl(214, 33%, 96%);
+            width: 100%;
+            height: 100%;
+            color: hsl(217, 6%, 43%);
+            cursor: pointer;
+            border: none;
+            border-radius: 3px;
+            font-size: large;
+            }
+
+
+
+
+          </style>
             </div>
 
             <div class="input-wrapper">
@@ -293,18 +344,18 @@
               <div class="featured-car-card">
 
                 <figure class="card-banner">
-                  <img src="../images/activa-6g-blue.png" alt="Honda Activa 6G" loading="lazy" width="440" height="300"
-                    class="w-100">
+                  <img src="../images/burgman-street-black.webp" alt="burgman-street-black" loading="lazy" width="440"
+                    height="300" class="w-100">
                 </figure>
 
                 <div class="card-content">
 
                   <div class="card-title-wrapper">
                     <h3 class="h3 card-title">
-                      <a href="#">Activa 6G</a>
+                      <a href="#">Suzuki Burgman</a>
                     </h3>
 
-                    <data class="year" value="2021">2023</data>
+                    <data class="year" value="2020">2023</data>
                   </div>
 
                   <ul class="card-list">
@@ -322,9 +373,9 @@
                     </li>
 
                     <!-- <li class="card-list-item">
-                      <ion-icon name="server-outline"></ion-icon>
+                      <ion-icon name="speedometer-outline"></ion-icon>
 
-                      <span class="card-item-text">5.3 Ltr Tank</span>
+                      <span class="card-item-text">7.7km / 1-litre</span>
                     </li>
 
                     <li class="card-list-item">
@@ -423,7 +474,7 @@
               <div class="featured-car-card">
 
                 <figure class="card-banner">
-                  <img src="../images/activa-6g-red.jpg" alt="Volkswagen T-Cross 2020" loading="lazy" width="440"
+                  <img src="../images/activa-6g-red.jpg" alt="activa-6g-red" loading="lazy" width="440"
                     height="300" class="w-100">
                 </figure>
 
@@ -488,18 +539,214 @@
               <div class="featured-car-card">
 
                 <figure class="card-banner">
-                  <img src="../images/burgman-street-black.webp" alt="burgman-street-black" loading="lazy" width="440"
-                    height="300" class="w-100">
+                  <img src="../images/thar.webp" alt="Mahindra Thar" loading="lazy" width="440" height="300"
+                    class="w-100">
                 </figure>
 
                 <div class="card-content">
 
                   <div class="card-title-wrapper">
                     <h3 class="h3 card-title">
-                      <a href="#">Suzuki Burgman</a>
+                      <a href="#">Mahindra Thar</a>
                     </h3>
 
-                    <data class="year" value="2020">2023</data>
+                    <data class="year" value="2022">Self Drive</data>
+                  </div>
+
+                  <ul class="card-list">
+
+                    <li class="card-list-item">
+                      <ion-icon name="people-outline"></ion-icon>
+
+                      <span class="card-item-text">4 People</span>
+                    </li>
+
+                    <li class="card-list-item">
+                      <i class='bx bx-gas-pump'></i>
+
+                      <span class="card-item-text">Diesel</span>
+                    </li>
+
+                    <li class="card-list-item">
+                      <ion-icon name="server-outline"></ion-icon>
+
+                      <span class="card-item-text">50Ltr Tank</span>
+                    </li>
+
+                    <li class="card-list-item">
+                      <ion-icon name="hardware-chip-outline"></ion-icon>
+
+                      <span class="card-item-text">Manual</span>
+                    </li>
+
+                  </ul>
+
+                  <div class="card-price-wrapper">
+
+                    <p class="card-price">
+                      <strong>From &#x20b9 60</strong> /Hrs
+                    </p>
+
+                    <button class="btn fav-btn" aria-label="Add to favourite list">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+
+                    <button class="btn">Book now</button>
+
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="featured-car-card">
+
+                <figure class="card-banner">
+                  <img src="../images/Ford-EcoSport.webp" alt="ecosport" loading="lazy" width="440" height="300"
+                    class="w-100">
+                </figure>
+
+                <div class="card-content">
+
+                  <div class="card-title-wrapper">
+                    <h3 class="h3 card-title">
+                      <a href="#">Ford Ecosport</a>
+                    </h3>
+
+                    <data class="year" value="2021">Self-Drive</data>
+                  </div>
+
+                  <ul class="card-list">
+
+                    <li class="card-list-item">
+                      <ion-icon name="people-outline"></ion-icon>
+
+                      <span class="card-item-text">5 People</span>
+                    </li>
+
+                    <li class="card-list-item">
+                      <i class='bx bx-gas-pump'></i>
+
+                      <span class="card-item-text">Diesel</span>
+                    </li>
+
+                    <li class="card-list-item">
+                      <ion-icon name="server-outline"></ion-icon>
+
+                      <span class="card-item-text">55Ltr Tank</span>
+                    </li>
+
+                    <li class="card-list-item">
+                      <ion-icon name="hardware-chip-outline"></ion-icon>
+
+                      <span class="card-item-text">Manual</span>
+                    </li>
+
+                  </ul>
+
+                  <div class="card-price-wrapper">
+
+                    <p class="card-price">
+                      <strong>From &#x20b9 60</strong> /Hrs
+                    </p>
+
+                    <button class="btn fav-btn" aria-label="Add to favourite list">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+
+                    <button class="btn">Book now</button>
+
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="featured-car-card">
+
+                <figure class="card-banner">
+                  <img src="../images/creta.webp" alt="Hyundai Creta" loading="lazy" width="440" height="300"
+                    class="w-100">
+                </figure>
+
+                <div class="card-content">
+
+                  <div class="card-title-wrapper">
+                    <h3 class="h3 card-title">
+                      <a href="#">Hyundai Creta</a>
+                    </h3>
+
+                    <data class="year" value="2021">Self Drive</data>
+                  </div>
+
+                  <ul class="card-list">
+
+                    <li class="card-list-item">
+                      <ion-icon name="people-outline"></ion-icon>
+
+                      <span class="card-item-text">5 People</span>
+                    </li>
+
+                    <li class="card-list-item">
+                      <i class='bx bx-gas-pump'></i>
+
+                      <span class="card-item-text">Petrol</span>
+                    </li>
+
+                    <li class="card-list-item">
+                      <ion-icon name="server-outline"></ion-icon>
+
+                      <span class="card-item-text">50Ltr Tank</span>
+                    </li>
+
+                    <li class="card-list-item">
+                      <ion-icon name="hardware-chip-outline"></ion-icon>
+
+                      <span class="card-item-text">Manual</span>
+                    </li>
+
+                  </ul>
+
+                  <div class="card-price-wrapper">
+
+                    <p class="card-price">
+                      <strong>From &#x20b9 55</strong> /Hrs
+                    </p>
+
+                    <button class="btn fav-btn" aria-label="Add to favourite list">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+
+                    <button class="btn">Book now</button>
+
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+
+
+            <li>
+              <div class="featured-car-card">
+
+                <figure class="card-banner">
+                  <img src="../images/activa-6g-blue.png" alt="Honda Activa 6G" loading="lazy" width="440" height="300"
+                    class="w-100">
+                </figure>
+
+                <div class="card-content">
+
+                  <div class="card-title-wrapper">
+                    <h3 class="h3 card-title">
+                      <a href="#">Activa 6G</a>
+                    </h3>
+
+                    <data class="year" value="2021">2023</data>
                   </div>
 
                   <ul class="card-list">
@@ -517,9 +764,9 @@
                     </li>
 
                     <!-- <li class="card-list-item">
-                      <ion-icon name="speedometer-outline"></ion-icon>
+                      <ion-icon name="server-outline"></ion-icon>
 
-                      <span class="card-item-text">7.7km / 1-litre</span>
+                      <span class="card-item-text">5.3 Ltr Tank</span>
                     </li>
 
                     <li class="card-list-item">
@@ -548,6 +795,7 @@
 
               </div>
             </li>
+
 
             <li>
               <div class="featured-car-card">
@@ -679,6 +927,136 @@
               </div>
             </li>
 
+            <li>
+              <div class="featured-car-card">
+
+                <figure class="card-banner">
+                  <img src="../images/marutisuzuki-dzire.webp" alt="swift-dzire" loading="lazy" width="440" height="300"
+                    class="w-100">
+                </figure>
+
+                <div class="card-content">
+
+                  <div class="card-title-wrapper">
+                    <h3 class="h3 card-title">
+                      <a href="#">Muruti Swift Dzire</a>
+                    </h3>
+
+                    <data class="year" value="2021">Self Drive</data>
+                  </div>
+
+                  <ul class="card-list">
+
+                    <li class="card-list-item">
+                      <ion-icon name="people-outline"></ion-icon>
+
+                      <span class="card-item-text">5 People</span>
+                    </li>
+
+                    <li class="card-list-item">
+                      <i class='bx bx-gas-pump'></i>
+
+                      <span class="card-item-text">Petrol</span>
+                    </li>
+
+                    <li class="card-list-item">
+                      <ion-icon name="server-outline"></ion-icon>
+
+                      <span class="card-item-text">45Ltr Tank</span>
+                    </li>
+
+                    <li class="card-list-item">
+                      <ion-icon name="hardware-chip-outline"></ion-icon>
+
+                      <span class="card-item-text">Manual</span>
+                    </li>
+
+                  </ul>
+
+                  <div class="card-price-wrapper">
+
+                    <p class="card-price">
+                      <strong>From &#x20b9 55</strong> /Hrs
+                    </p>
+
+                    <button class="btn fav-btn" aria-label="Add to favourite list">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+
+                    <button class="btn">Book now</button>
+
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="featured-car-card">
+
+                <figure class="card-banner">
+                  <img src="../images/swift.webp" alt="maruti-suzuki-swift" loading="lazy" width="440" height="300"
+                    class="w-100">
+                </figure>
+
+                <div class="card-content">
+
+                  <div class="card-title-wrapper">
+                    <h3 class="h3 card-title">
+                      <a href="#">Maruti Swift</a>
+                    </h3>
+
+                    <data class="year" value="2022">Self Drive</data>
+                  </div>
+
+                  <ul class="card-list">
+
+                    <li class="card-list-item">
+                      <ion-icon name="people-outline"></ion-icon>
+
+                      <span class="card-item-text">5 People</span>
+                    </li>
+
+                    <li class="card-list-item">
+                      <i class='bx bx-gas-pump'></i>
+
+                      <span class="card-item-text">Petrol</span>
+                    </li>
+
+                    <li class="card-list-item">
+                      <ion-icon name="server-outline"></ion-icon>
+
+                      <span class="card-item-text">45Ltr Tank</span>
+                    </li>
+
+                    <li class="card-list-item">
+                      <ion-icon name="hardware-chip-outline"></ion-icon>
+
+                      <span class="card-item-text">Manual</span>
+                    </li>
+
+                  </ul>
+
+                  <div class="card-price-wrapper">
+
+                    <p class="card-price">
+                      <strong>From &#x20b9 50</strong> /Hrs
+                    </p>
+
+                    <button class="btn fav-btn" aria-label="Add to favourite list">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+
+                    <button class="btn">Book now</button>
+
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+
           </ul>
 
         </div>
@@ -717,7 +1095,7 @@
           </li>
 
           <li>
-            <a href="#" class="footer-link">Pricing plans</a>
+            <a href="#" class="footer-link">Tariff plans</a>
           </li>
 
           <li>
@@ -725,7 +1103,7 @@
           </li>
 
           <li>
-            <a href="#" class="footer-link">Contacts</a>
+            <a href="#" class="footer-link">Contact us</a>
           </li>
 
         </ul>
@@ -760,19 +1138,19 @@
         <ul class="social-list">
 
           <li>
-            <a href="https://www.facebook.com/rjrajsa" class="social-link">
+            <a href="https://www.facebook.com" target="_blank" class="social-link">
               <ion-icon name="logo-facebook"></ion-icon>
             </a>
           </li>
 
           <li>
-            <a href="https://mail.google.com/mail/u/0/#compose" class="social-link">
+            <a href="https://www.instagram.com/eazyrentaljaipur/?utm_source=qr&igshid=OGIxMTE0OTdkZA%3D%3D" target="_blank" class="social-link">
               <ion-icon name="logo-instagram"></ion-icon>
             </a>
           </li>
-
+         
           <li>
-            <a href="#" class="social-link">
+            <a href="mailto:=eazyrental360@gmail.com" target="_blank" class="social-link">
               <ion-icon name="mail-outline"></ion-icon>
             </a>
           </li>
